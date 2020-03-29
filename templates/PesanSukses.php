@@ -23,7 +23,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand">Sultan Herbal Store</a>
+        <a class="navbar-brand"><?=$vendorName?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +32,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/#">Halaman Utama</a>
                 </li>
-           
+                
                 <li class="nav-item">
                     <a class="nav-link" href="<?=$kontak?>">Kontak</a>
                 </li>
@@ -42,54 +42,56 @@
             </ul>
         </div>
     </nav>
-<div class="contact1 d-flex h-100">
-    <div class="row justify-content-center align-self-center">
-        <div class="col-sm-6 col-sm-offset-3">
-        <img src="images/sukses.png" class="h-40 w-25">
-        <h3>Pesanan Sedang Di Proses</h3>
-        <br/>
-        <p style="font-size:20px;color:#5C5C5C;">Kami telah menerima <?=htmlspecialchars($jumlahBarang);?> unit <?=htmlspecialchars($namaBarang);?> pesanan anda, silahkan tunggu untuk respon pengirimanya, Kembali ke menu?</p>
-        <a href="/#" class="btn btn-success">Kembali</a><br><br>
-        </div>   
-    </div>
-</div>
-<!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Sultan Herbal Store, 2020</p>
+    <div class="contact1 d-flex h-100">
+        <div class="container-contact1">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <img src="images/sukses.png" class="h-40 w-25">
+                    <h3>Pesanan Sedang Di Proses</h3>
+                    <br/>
+                    <p style="font-size:20px;color:#5C5C5C;">Kami telah menerima <?=htmlspecialchars($jumlahBarang);?> unit <?=htmlspecialchars($namaBarang);?> pesanan anda, silahkan tunggu untuk respon pengirimanya, Kembali ke menu?</p>
+                    <a href="/#" class="btn btn-success">Kembali</a><br><br>
+                </div>   
+            </div>
+        </div>
     </div>
     <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; <?=$copyRight?>, 2020</p>
+      </div>
+      <!-- /.container -->
   </footer>
 
-    <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/tilt/tilt.jquery.min.js"></script>
-    <script >
-        $('.js-tilt').tilt({
-            scale: 1.1
-        })
-    </script>
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+  <script >
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'UA-23581568-13');
-    </script>
+    gtag('config', 'UA-23581568-13');
+</script>
 
-    <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
 
 </body>
 </html>

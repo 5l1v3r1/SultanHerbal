@@ -23,7 +23,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand">Sultan Herbal Store</a>
+        <a class="navbar-brand"><?=$vendorName?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,7 +57,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; Sultan Herbal Store, 2020</p>
+          <p class="m-0 text-center text-white">Copyright &copy; <?=$vendorName?>, 2020</p>
       </div>
       <!-- /.container -->
   </footer>

@@ -19,10 +19,11 @@ $app = new App($container);
 $container = $app->getContainer();
 // Add container to the application
 $templateVariables = [
-    'copyRight' => 'Sultan Herbal Store',
+    'whatsappLink' => 'https://wa.me/088229216240',
+    'vendorName' => 'Sultan Herbal Store',
     'pesanBarang' => 'pesan-barang',
     'namaBarang' => [
-        'Hajar Jahanam',
+        'Hajar Jahanam Super',
         'Lintah Papua'
     ]
 ];
@@ -84,12 +85,6 @@ $app->get(
     function (Request $request, Response $response) {
         $view = $this->get('view');
         $view->render($response, 'PesanBarang.php');
-    }
-);
-$app->get(
-    '/download-{type}',
-    function (Request $request, Response $response, $args) {
-        $this->view->render($response, $args['type'] . '.html');
     }
 );
 $app->run();
