@@ -41,7 +41,7 @@
 		<div class="contact1">
 			<div class="container-contact1">
 				<div class="contact1-pic js-tilt" data-tilt>
-					<img src="images/profil.jpeg" alt="IMG">
+					<img src="assets/images/profil.jpeg" alt="IMG">
 				</div>
 				<form class="contact1-form validate-form" method="POST">
 					<span class="contact1-form-title">
