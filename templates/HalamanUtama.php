@@ -5,20 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--===============================================================================================-->
-        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+        <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico"/>
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/css-hamburgers/hamburgers.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="css/util.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
         <!--===============================================================================================-->
     </head>
     <body>
@@ -43,14 +43,14 @@
         <div class="contact1">
             <div class="container-contact1">
                 <div class="js-tilt" data-tilt>
-                    <img src="images/profil.jpeg" class="mx-auto d-block h-50 w-50" alt="IMG">
+                    <img src="assets/images/profil.jpeg" class="mx-auto d-block h-50 w-50" alt="IMG">
                 </div>
                 <!-- Jumbotron Header -->
                 <header>
                     <div class="jumbotron my-4">
                         <h2 class="display-5">Apa Itu Hajar Jahanam?</h2>
                         <div class="js-tilt" data-tilt>
-                            <img src="images/hajar-jahanam-super-premium1.png" class="h-50 w-50" alt="IMG">
+                            <img src="assets/images/hajar-jahanam-super-premium1.png" class="h-50 w-50" alt="IMG">
                         </div>
                         <p class="lead">Hajar Jahanam adalah getah mengeras dari tumbuhan tertentu yang hanya ada di negara Mesir dan India. Getah tumbuhan yang mengeras ini akan berbentuk menyerupai batu berwarna hitam sehingga ada pula yang menyebutnya dengan nama 'Black Stone'. Kemudian, getah itu diramu sedemikian rupa menjadi sebuah obat tradisional yang dikhususkan untuk laki-laki.</p>
                     </div>
@@ -58,7 +58,7 @@
                     <div class="jumbotron my-4">
                         <h2 class="display-5">Khasiat Hajar Jahanam</h2>
                         <div class="js-tilt" data-tilt>
-                            <img src="images/hajar-jahanam2.png" class="h-50 w-50" alt="IMG">
+                            <img src="assets/images/hajar-jahanam2.png" class="h-50 w-50" alt="IMG">
                         </div>
                         <p class="lead">Hajar Jahanam sejatinya telah ada dan dipakai sejak zaman dahulu kala, yaitu pada masa Mesir Kuno. Khasiat Hajar Jahanam yang terkenal adalah membantu menjaga stamina laki-laki dalam bercinta dengan mengurangi tingkat sensitivitas organ intim laki-laki. Dengan begitu, sesi bercinta bersama pasangan jadi lebih tahan lama dan membantu memuaskan pasangan.</p>
                     </div>
@@ -68,7 +68,7 @@
                         <!-- 16:9 aspect ratio -->
                         <div class="embed-responsive embed-responsive-16by9">
                             <video controls>
-                                <source src="videos/hajar-jahanam.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+                                <source src="assets/videos/hajar-jahanam.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
                             </video>
                         </div>
                         <br/>
@@ -81,40 +81,40 @@
                 <div class="row text-center">
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img class="card-img-top" src="images/testi1.jpeg" alt="">
+                            <img class="card-img-top" src="assets/images/testi1.jpeg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img class="card-img-top" src="images/testi2.jpeg" alt="">
+                            <img class="card-img-top" src="assets/images/testi2.jpeg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img class="card-img-top" src="images/testi3.jpeg" alt="">
+                            <img class="card-img-top" src="assets/images/testi3.jpeg" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img class="card-img-top" src="images/testi4.jpeg" alt="">
+                            <img class="card-img-top" src="assets/images/testi4.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
                     <div class="row text-bottom">
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="card h-80">
-                                <img class="card-img-bottom" src="images/bisacod.png" alt="">
+                                <img class="card-img-bottom" src="assets/images/bisacod.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="card h-70">
-                                <img class="card-img-bottom" src="images/jte.jpg" alt="">
+                                <img class="card-img-bottom" src="assets/images/jte.jpg" alt="">
                             </div>
                         </div>
                         
                         <div class="col-lg-3 col-md-6 mb-4">
                             <div class="card h-60">
-                                <img class="card-img-bottom" src="images/bank.png" alt="">
+                                <img class="card-img-bottom" src="assets/images/bank.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -142,14 +142,14 @@
         <!-- /.container -->
     </footer>
     <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/popper.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
+    <script src="assets/vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
     <script >
     $('.js-tilt').tilt({
     scale: 1.1
@@ -164,6 +164,6 @@
     gtag('config', 'UA-23581568-13');
     </script>
     <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

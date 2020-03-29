@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico"/>
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css-hamburgers/hamburgers.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!--===============================================================================================-->
 </head>
 <body>
@@ -46,7 +46,7 @@
         <div class="container-contact1">
             <div class="row justify-content-center align-self-center">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <img src="images/sukses.png" class="h-40 w-25">
+                    <img src="assets/images/sukses.png" class="h-40 w-25">
                     <h3>Pesanan Sedang Di Proses</h3>
                     <br/>
                     <p style="font-size:20px;color:#5C5C5C;">Kami telah menerima <?=htmlspecialchars($jumlahBarang);?> unit <?=htmlspecialchars($namaBarang);?> pesanan anda, silahkan tunggu untuk respon pengirimanya, Kembali ke menu?</p>
@@ -66,14 +66,14 @@
   </footer>
 
   <!--===============================================================================================-->
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
   <!--===============================================================================================-->
-  <script src="vendor/bootstrap/js/popper.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/popper.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <!--===============================================================================================-->
-  <script src="vendor/select2/select2.min.js"></script>
+  <script src="assets/vendor/select2/select2.min.js"></script>
   <!--===============================================================================================-->
-  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+  <script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
   <script >
     $('.js-tilt').tilt({
         scale: 1.1
@@ -91,7 +91,7 @@
 </script>
 
 <!--===============================================================================================-->
-<script src="js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
