@@ -32,8 +32,14 @@
 					<li class="nav-item">
 						<a class="nav-link" href="/#">Halaman Utama</a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="<?=$hajarJahanamSuper?>">Hajar Jahanam Super</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="<?=$lintahPapua?>">Lintah Papua</a>
+					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="<?=$pesanBarang?>">Pesan Barang <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="<?=$pesanBarang?>">Pesan Barang</a>
 					</li>
 				</ul>
 			</div>
@@ -84,8 +90,8 @@
 						<span class="shadow-input1"></span>
 					</div>
 					<!--  <div class="wrap-input1 validate-input" data-validate = "Silahkan isi nama barang">
-							<input class="input1" type="text" name="nama_barang" placeholder="Nama barang" required>
-							<span class="shadow-input1"></span>
+								<input class="input1" type="text" name="nama_barang" placeholder="Nama barang" required>
+								<span class="shadow-input1"></span>
 					</div>-->
 					<div class="container-contact1-form-btn">
 						<button class="contact1-form-btn">
