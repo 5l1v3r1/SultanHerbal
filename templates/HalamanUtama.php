@@ -93,7 +93,7 @@
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>10x lebih kuat khsiat nya daripada hajar jahanam biasa</li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>1 Pcs cukup untuk 200x pakai</li>
                                     <li><span class="fa-li"><i class="fas fa-check"></i></span>Tanpa efek samping</li>
-                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Gratis ongkir</li>
+                                    <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span><strike>Gratis ongkir</strike></li>
                                 </ul>
                                 <a href="<?=$pesanBarang?>?barang=hjgold" class="btn btn-block btn-primary text-uppercase">Pesan sekarang</a>
                             </div>
@@ -137,50 +137,50 @@
                     </div>
                 </div>
             </div>
-        <!-- /.row -->
-        <div class="contact1">
-            <a href="<?=$pesanBarang?>" class="btn btn-success btn-lg">
-                <span class="text-center text-white">
-                    <span class="">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <!-- /.row -->
+            <div class="contact1">
+                <a href="<?=$pesanBarang?>" class="btn btn-success btn-lg">
+                    <span class="text-center text-white">
+                        <span class="">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </span>
+                        <span class="">BAYAR DITEMPAT KLIK DISINI</span>
                     </span>
-                    <span class="">BAYAR DITEMPAT KLIK DISINI</span>
-                </span>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
-</div>
-<!-- /.container -->
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; <?=$vendorName?>, 2020</p>
-    </div>
     <!-- /.container -->
-</footer>
-<!--===============================================================================================-->
-<script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-<script src="assets/vendor/bootstrap/js/popper.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-<script src="assets/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-<script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
-<script >
-$('.js-tilt').tilt({
-scale: 1.1
-})
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'UA-23581568-13');
-</script>
-<!--===============================================================================================-->
-<script src="assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; <?=$vendorName?>, 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!--===============================================================================================-->
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="assets/vendor/bootstrap/js/popper.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="assets/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
+    <script >
+    $('.js-tilt').tilt({
+    scale: 1.1
+    })
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-23581568-13');
+    </script>
+    <!--===============================================================================================-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
