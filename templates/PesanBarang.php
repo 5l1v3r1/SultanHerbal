@@ -64,12 +64,22 @@
 						<span class="shadow-input1"></span>
 					</div>
 					<div class="form-group">
-						<select class="wrap-input1 custom-select my-1 mr-sm-2" title="Pilih nama barang" name="nama_barang"required>
+						<select class="wrap-input1 custom-select my-1 mr-sm-2" title="Pilih nama barang" name="nama_barang" required>
 							<?php
-							foreach($namaBarang as $namaBarang) {
+							switch ($barang) {
+								case 'hjgold':
+									echo '<option selected>Hajar jahanam super gold</option>';
+									break;
+								case 'lintahPapua':
+									echo '<option selected>Lintah papua</option>';
+									break;
+								default:
+									echo '<option>Hajar jahanam super gold</option>';
+									echo '<option>Lintah papua</option>';
+									echo '<option selected hidden disable>Pilih barang</option>';
+									break;
+							}
 							?>
-							<option><?=$namaBarang?></option>
-							<? }?>
 						</select>
 						<span class="shadow-input1"></span>
 					</div>

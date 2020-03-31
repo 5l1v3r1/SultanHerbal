@@ -19,13 +19,8 @@ $app = new App($container);
 $container = $app->getContainer();
 // Add container to the application
 $templateVariables = [
-    'whatsappLink' => 'https://wa.me/088229216240',
     'vendorName' => 'Sultan Herbal Store',
-    'pesanBarang' => 'pesan-barang',
-    'namaBarang' => [
-        'Hajar Jahanam Super',
-        'Lintah Papua'
-    ]
+    'pesanBarang' => 'pesan-barang'
 ];
 $container['view'] = new Views('../templates/', $templateVariables);
 $container['telegram'] = new Telegram();
@@ -84,7 +79,17 @@ $app->get(
     '/pesan-barang',
     function (Request $request, Response $response) {
         $view = $this->get('view');
-        $view->render($response, 'PesanBarang.php');
+        $args = $request->getQueryParams();
+        if(isset($args['barang'])) {
+            return $view->render($response, 'PesanBarang.php',
+                [
+                    'barang' => $args['barang']
+                ]
+            );
+        }
+        else {
+            return $view->render($response, 'PesanBarang.php');
+        }
     }
 );
 $app->run();
