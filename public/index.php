@@ -63,7 +63,7 @@ $app->post(
         echo 'Alamat: *' . $args['alamat_pemesan'] . "*\n";;
         echo 'Nama barang: *' . $args['nama_barang'] . "*\n";;
         echo 'Jumlah barang: *' . $args['jumlah_barang'] . "*\n";
-        echo 'Lokasi ip: *' . empty($details->city) ? "Tidak diketahui*\n" : $details->city . "*\n";
+        //echo 'Lokasi ip: *' . empty($details->city) ? "Tidak diketahui*\n" : $details->city . "*\n";
         echo '===== Orderan Baru Boss =====';
         
         $dataPembeli = ob_get_clean();

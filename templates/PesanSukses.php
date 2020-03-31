@@ -29,17 +29,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/#">Halaman Utama</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="<?=$kontak?>">Kontak</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?=$pesanBarang?>">Pesan Barang</a> 
-                </li>
-            </ul>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/#">Halaman Utama</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=$hajarJahanamSuper?>">Hajar Jahanam Super</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=$lintahPapua?>">Lintah Papua</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?=$pesanBarang?>">Pesan Barang</a>
+                    </li>
+                </ul>
         </div>
     </nav>
     <div class="contact1 d-flex h-100">
@@ -60,7 +63,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-          <p class="m-0 text-center text-white">Copyright &copy; <?=$copyRight?>, 2020</p>
+          <p class="m-0 text-center text-white">Copyright &copy; <?=$vendorName?>, 2020</p>
       </div>
       <!-- /.container -->
   </footer>
