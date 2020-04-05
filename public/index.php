@@ -21,6 +21,7 @@ $container = $app->getContainer();
 $templateVariables = [
     'vendorName' => 'Sultan Herbal Store',
     'lintahPapua' => 'lintah-papua',
+    'lintahKalimantan' => 'lintah-kalimantan',
     'hajarJahanamSuper' => 'hajar-jahanm-super',
     'pesanBarang' => 'pesan-barang'
 ];
@@ -30,21 +31,52 @@ $app->get(
     '/',
     function (Request $request, Response $response) {
         $view = $this->get('view');
+        $view->render($response, 'Header.php',
+            [
+                'title'=>'Halaman Utama'
+            ]
+        );
         $view->render($response, 'HalamanUtama.php');
+        return $view->render($response, 'Footer.php');
     }
 );
 $app->get(
     '/hajar-jahanm-super',
     function (Request $request, Response $response) {
         $view = $this->get('view');
+        $view->render($response, 'Header.php',
+            [
+                'title'=>'Hajar Jahanam Super'
+            ]
+        );
         $view->render($response, 'HajarJahanamSuper.php');
+        return $view->render($response, 'Footer.php');
     }
 );
 $app->get(
     '/lintah-papua',
     function (Request $request, Response $response) {
         $view = $this->get('view');
+        $view->render($response, 'Header.php',
+            [
+                'title'=>'Lintah Papua'
+            ]
+        );
         $view->render($response, 'LintahPapua.php');
+        return $view->render($response, 'Footer.php');
+    }
+);
+$app->get(
+    '/lintah-kalimantan',
+    function (Request $request, Response $response) {
+        $view = $this->get('view');
+        $view->render($response, 'Header.php',
+            [
+                'title'=>'Lintah Kalimantan'
+            ]
+        );
+        $view->render($response, 'LintahKalimantan.php');
+        return $view->render($response, 'Footer.php');
     }
 );
 $app->post(
@@ -74,20 +106,32 @@ $app->post(
                 'parse_mode' => 'Markdown'
             ]);
         if($status) {
-            return $view->render($response, 'PesanSukses.php',
+            $view->render($response, 'Header.php',
+                [
+                    'title'=>'Pesan Sukses'
+                ]
+            );
+            $view->render($response, 'PesanSukses.php',
                 [
                     'namaBarang' => $args['nama_barang'],
                     'jumlahBarang' => $args['jumlah_barang']
                 ]
             );
+            return $view->render($response, 'Footer.php');
         }
         else {
-            return $view->render($response, 'PesanGagal.php',
+            $view->render($response, 'Header.php',
+                [
+                    'title'=>'Pesan Gagal'
+                ]
+            );
+            $view->render($response, 'PesanGagal.php',
                 [
                     'namaBarang' => $args['nama_barang'],
                     'jumlahBarang' => $args['jumlah_barang']
                 ]
             );
+            return $view->render($response, 'Footer.php');
         }
     }
 );
@@ -97,14 +141,26 @@ $app->get(
         $view = $this->get('view');
         $args = $request->getQueryParams();
         if(isset($args['barang'])) {
-            return $view->render($response, 'PesanBarang.php',
+            $view->render($response, 'Header.php',
+                [
+                    'title'=>'Pesan Barang'
+                ]
+            );
+            $view->render($response, 'PesanBarang.php',
                 [
                     'barang' => $args['barang']
                 ]
             );
+            return $view->render($response, 'Footer.php');
         }
         else {
-            return $view->render($response, 'PesanBarang.php');
+            $view->render($response, 'Header.php',
+                [
+                    'title'=>'Pesan Barang'
+                ]
+            );
+            $view->render($response, 'PesanBarang.php');
+            return $view->render($response, 'Footer.php');
         }
     }
 );
