@@ -91,6 +91,11 @@
                     <img class="card-img-bottom" src="assets/images/bank.png" alt="">
                 </div>
             </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-60">
+                    <img class="card-img-bottom" src="assets/images/wa.jpeg" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <!-- /.row -->
