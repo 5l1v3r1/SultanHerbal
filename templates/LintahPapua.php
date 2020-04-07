@@ -108,7 +108,7 @@
         </div>
     </div>
     <!-- /.row -->
-    <div class="contact1">
+    <div class="footer">
         <a href="<?=$pesanBarang?>" class="btn btn-success btn-lg">
             <span class="text-center text-white">
                 <span class="">

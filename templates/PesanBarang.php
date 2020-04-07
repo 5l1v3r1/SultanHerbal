@@ -37,10 +37,11 @@
 							echo '<option selected>Lintah kalimantan</option>';
 							break;
 						default:
-							echo '<option>Hajar jahanam super gold</option>';
-							echo '<option>Lintah papua</option>';
-							echo '<option>Lintah kalimantan</option>';
-							echo '<option selected hidden disable>Pilih barang</option>';
+							echo '<option value="" hidden>Pilih barang</option>';
+							echo '<option value="Hajar jahanam super gold">Hajar jahanam super gold</option>';
+							echo '<option value="Lintah papua">Lintah papua</option>';
+							echo '<option value="Lintah kalimantan">Lintah kalimantan</option>';
+							
 							break;
 					}
 					?>
