@@ -13,11 +13,12 @@ $config = [
         'displayErrorDetails' => true,
     ],
 ];
+session_start();
 
 $container = new Container($config);
 $app = new App($container);
 $container = $app->getContainer();
-// Add container to the application
+
 $templateVariables = [
     'vendorName' => 'Sultan Herbal Store',
     'lintahPapua' => 'lintah-papua',
@@ -25,6 +26,8 @@ $templateVariables = [
     'hajarJahanamSuper' => 'hajar-jahanm-super',
     'pesanBarang' => 'pesan-barang',
 ];
+
+// container
 $container['view'] = new Views('../templates/', $templateVariables);
 $container['telegram'] = new Telegram();
 $app->get(
@@ -96,7 +99,7 @@ $app->post(
         $ip = $_SERVER['REMOTE_ADDR'];
         $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 
-        if (strlen($args['alamat_pemesan']) <= 5) {
+        if (strlen($args['alamat_pemesan']) <= 5 || $args['token'] != $_SESSION['csrf_token']) {
             $view->render(
                 $response,
                 'Header.php',
@@ -108,7 +111,7 @@ $app->post(
                 $response,
                 'PesanGagal.php',
                 [
-                    'status' => 'alamat tidak valid',
+                    'status' => 'alamat tidak valid atau token salah',
                     'namaBarang' => $args['nama_barang'],
                     'jumlahBarang' => $args['jumlah_barang'],
                 ]
@@ -178,31 +181,30 @@ $app->get(
     function (Request $request, Response $response) {
         $view = $this->get('view');
         $args = $request->getQueryParams();
-        if (isset($args['barang'])) {
-            $view->render(
-                $response,
-                'Header.php',
-                [
-                    'title' => 'Pesan Barang',
-                ]
-            );
+        $token = $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+        
+        $view->render(
+            $response,
+            'Header.php',
+            [
+                'title' => 'Pesan Barang',
+            ]
+        ); 
+        if (isset($args['barang'])) {    
             $view->render(
                 $response,
                 'PesanBarang.php',
                 [
                     'barang' => $args['barang'],
-                ]
+                    'csrfToken' => $token                ]
             );
             return $view->render($response, 'Footer.php');
         } else {
-            $view->render(
-                $response,
-                'Header.php',
+            $view->render($response, 'PesanBarang.php',
                 [
-                    'title' => 'Pesan Barang',
+                    'csrfToken'=> $token
                 ]
             );
-            $view->render($response, 'PesanBarang.php');
             return $view->render($response, 'Footer.php');
         }
     }

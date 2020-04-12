@@ -4,6 +4,7 @@
 			<img src="assets/images/profil.jpeg" alt="IMG">
 		</div>
 		<form class="contact1-form validate-form" method="POST">
+			<input type="hidden" name="token" value="<?=$csrfToken?>"/>
 			<span class="contact1-form-title">
 				Silahkan isi folmulir untuk pemesanan via pembayaran COD
 			</span>
@@ -26,40 +27,43 @@
 			<div class="form-group">
 				<select class="wrap-input1 custom-select my-1 mr-sm-2" title="Pilih nama barang" name="nama_barang" required>
 					<?php
-					switch ($barang) {
-						case 'hjgold':
+					if(isset($barang)) {
+						switch ($barang) {
+							case 'Hajar jahanam super gold':
 							echo '<option selected>Hajar jahanam super gold</option>';
 							break;
-						case 'lintahPapua':
+							case 'Lintah papua':
 							echo '<option selected>Lintah papua</option>';
 							break;
-						case 'lintahKalimantan':
+							case 'Lintah kalimantan':
 							echo '<option selected>Lintah kalimantan</option>';
 							break;
-						default:
+							default:
 							echo '<option value="" hidden>Pilih barang</option>';
 							echo '<option value="Hajar jahanam super gold">Hajar jahanam super gold</option>';
 							echo '<option value="Lintah papua">Lintah papua</option>';
 							echo '<option value="Lintah kalimantan">Lintah kalimantan</option>';
-							
 							break;
+						}
 					}
+					else {
+							echo '<option value="" hidden>Pilih barang</option>';
+							echo '<option value="Hajar jahanam super gold">Hajar jahanam super gold</option>';
+							echo '<option value="Lintah papua">Lintah papua</option>';
+							echo '<option value="Lintah kalimantan">Lintah kalimantan</option>';
+						}
 					?>
 				</select>
 				<span class="shadow-input1"></span>
 			</div>
-			<!--  <div class="wrap-input1 validate-input" data-validate = "Silahkan isi nama barang">
-							<input class="input1" type="text" name="nama_barang" placeholder="Nama barang" required>
-							<span class="shadow-input1"></span>
-			</div>-->
-			<div class="container-contact1-form-btn">
-				<button class="contact1-form-btn">
-				<span>
-					Order barang
-					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-				</span>
-				</button>
+					<div class="container-contact1-form-btn">
+							<button class="contact1-form-btn">
+								<span>
+									Order barang
+									<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
 			</div>
-		</form>
-	</div>
-</div>

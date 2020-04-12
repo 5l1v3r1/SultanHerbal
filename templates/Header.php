@@ -1,3 +1,4 @@
+<?php header('X-Frame-Options: deny');?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
