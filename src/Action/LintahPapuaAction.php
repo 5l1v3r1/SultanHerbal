@@ -20,7 +20,7 @@ final class LintahPapuaAction
     ) : ResponseInterface
     {
         $view = $this->view;
-        $view->render($response, 'Header.php', ['title' => 'Halaman Utama']);
+        $view->render($response, 'Header.php', ['title' => 'Lintah Papua']);
         $view->render($response, 'LintahPapua.php');
         $view->render($response, 'Footer.php');
 

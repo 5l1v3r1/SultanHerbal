@@ -66,7 +66,7 @@ final class PesanBarangAction
                 $status = $telegram->bot(
                     'sendMessage',
                     [
-                        'chat_id' => '-485469824',
+                        'chat_id' => $telegram->BOT_CHAT_ID,
                         'text' => $dataPembeli,
                         'parse_mode' => 'Markdown',
                     ]
