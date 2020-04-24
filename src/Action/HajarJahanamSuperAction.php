@@ -22,13 +22,13 @@ final class HajarJahanamSuperAction
         $view = $this->view;
         $view->render(
             $response,
-            'Header.php',
+            'header.php',
             [
                 'title' => 'Hajar Jahanam Super',
             ]
         );
-        $view->render($response, 'HajarJahanamSuper.php');
-        $view->render($response, 'Footer.php');
+        $view->render($response, 'hajar-jahanam-super.php');
+        $view->render($response, 'footer.php');
 
         return $response;
     }

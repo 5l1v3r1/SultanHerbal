@@ -20,9 +20,9 @@ final class HomeAction
     ) : ResponseInterface
     {
         $view = $this->view;
-        $view->render($response, 'Header.php', ['title' => 'Halaman Utama']);
-        $view->render($response, 'HalamanUtama.php');
-        $view->render($response, 'Footer.php');
+        $view->render($response, 'header.php', ['title' => 'Halaman Utama']);
+        $view->render($response, 'halaman-utama.php');
+        $view->render($response, 'footer.php');
 
         return $response;
     }

@@ -35,7 +35,7 @@ final class PesanBarangAction
             if (strlen($args['alamat_pemesan']) <= 5) {
                 $view->render(
                     $response,
-                    'Header.php',
+                    'header.php',
                     [
                         'title' => 'Pesan Gagal',
                     ]
@@ -43,7 +43,7 @@ final class PesanBarangAction
 
                 $view->render(
                     $response,
-                    'PesanGagal.php',
+                    'pesan-gagal.php',
                     [
                         'status' => 'alamat tidak valid',
                         'namaBarang' => $args['nama_barang'],
@@ -76,7 +76,7 @@ final class PesanBarangAction
             if ($status['ok'] == true) {
                 $view->render(
                     $response,
-                    'Header.php',
+                    'header.php',
                     [
                         'title' => 'Pesan Sukses'
                     ]
@@ -84,7 +84,7 @@ final class PesanBarangAction
 
                 $view->render(
                     $response,
-                    'PesanSukses.php',
+                    'pesan-sukses.php',
                     [
                         'namaBarang' => $args['nama_barang'],
                         'jumlahBarang' => $args['jumlah_barang']
@@ -94,7 +94,7 @@ final class PesanBarangAction
             } else {
                 $view->render(
                     $response,
-                    'Header.php',
+                    'header.php',
                     [
                         'title' => 'Pesan Gagal',
                     ]
@@ -102,7 +102,7 @@ final class PesanBarangAction
 
                 $view->render(
                     $response,
-                    'PesanGagal.php',
+                    'pesan-gagal.php',
                     [
                         'status' => 'Server bermasalah',
                         'namaBarang' => $args['nama_barang'],
@@ -112,18 +112,18 @@ final class PesanBarangAction
             }
         } elseif ($method == 'GET') {
             $args = $request->getQueryParams();
-            $view->render($response, 'Header.php', ['title' => 'Pesan Barang']);
+            $view->render($response, 'header.php', ['title' => 'Pesan Barang']);
 
             if (isset($args['barang'])) {
                 $view->render(
                     $response,
-                    'PesanBarang.php', ['barang' => $args['barang']]);
+                    'pesan-barang.php', ['barang' => $args['barang']]);
             } else {
-                $view->render($response, 'PesanBarang.php');
+                $view->render($response, 'pesan-barang.php');
             }
 
-            $view->render($response, 'Footer.php');
-            return $response;
+            $view->render($response, 'footer.php');
         }
+            return $response;
     }
 }

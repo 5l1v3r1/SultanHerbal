@@ -48,10 +48,6 @@
 				</select>
 				<span class="shadow-input1"></span>
 			</div>
-			<!--  <div class="wrap-input1 validate-input" data-validate = "Silahkan isi nama barang">
-							<input class="input1" type="text" name="nama_barang" placeholder="Nama barang" required>
-							<span class="shadow-input1"></span>
-			</div>-->
 			<div class="container-contact1-form-btn">
 				<button class="contact1-form-btn">
 				<span>

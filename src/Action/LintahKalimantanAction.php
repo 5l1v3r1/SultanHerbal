@@ -20,9 +20,9 @@ final class LintahKalimantanAction
     ) : ResponseInterface
     {
         $view = $this->view;
-        $view->render($response, 'Header.php', ['title' => 'Lintah Kalimantan']);
-        $view->render($response, 'LintahKalimantan.php');
-        $view->render($response, 'Footer.php');
+        $view->render($response, 'header.php', ['title' => 'Lintah Kalimantan']);
+        $view->render($response, 'lintah-kalimantan.php');
+        $view->render($response, 'footer.php');
 
         return $response;
     }

@@ -36,7 +36,7 @@ return [
 
     PhpRenderer::class => function(ContainerInterface $container) {
         $templateVariables = [
-            'vendorName' => 'Sultan Herbal Store',
+            'appName' => 'Sultan Herbal Store',
             'lintahPapua' => 'lintah-papua',
             'lintahKalimantan' => 'lintah-kalimantan',
             'hajarJahanamSuper' => 'hajar-jahanam-super',
