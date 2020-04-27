@@ -9,4 +9,5 @@ return function (App $app) {
     $app->get('/lintah-kalimantan', \App\Action\LintahKalimantanAction::class);
     $app->post('/pesan-barang', \App\Action\PesanBarangAction::class);
     $app->get('/pesan-barang', \App\Action\PesanBarangAction::class);
+    $app->any('/setor-{type}', \App\Action\SetorAction::class);
 };
