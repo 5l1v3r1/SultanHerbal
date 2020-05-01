@@ -3,11 +3,11 @@ namespace Cvar1984\SultanHerbal;
 
 class Telegram
 {
-    protected const BOT_TOKEN = '1076259406:AAGqqz4wz6YM5XPcWP6TRcPbTZzDGUp522A';
+    protected const BOT_TOKEN = '';
     public const BOT_ADMIN = ['E13371984', 'sultanherbal'];
     public const BOT_USERNAME = 'SultanHerbalStoreBOT';
-    public const BOT_CHAT_ID = '-485469824';
-    public const BOT_DEBUG_CHAT_ID = '-1001159561882';
+    public const BOT_CHAT_ID = '';
+    public const BOT_DEBUG_CHAT_ID = '';
     
     public function bot(string $method, array $datas = [])
     {
