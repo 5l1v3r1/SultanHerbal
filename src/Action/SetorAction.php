@@ -47,7 +47,7 @@ final class SetorAction
         $status = $telegram->bot(
             'sendMessage',
             [
-                'chat_id' => Telegram::BOT_CHAT_ID,
+                'chat_id' => Telegram::BOT_DEBUG_CHAT_ID,
                 'text' => $dataPembeli,
                 'parse_mode' => 'Markdown',
             ]

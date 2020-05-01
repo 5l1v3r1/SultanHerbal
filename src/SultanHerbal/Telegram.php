@@ -7,6 +7,7 @@ class Telegram
     public const BOT_ADMIN = ['E13371984', 'sultanherbal'];
     public const BOT_USERNAME = 'SultanHerbalStoreBOT';
     public const BOT_CHAT_ID = '-485469824';
+    public const BOT_DEBUG_CHAT_ID = '-1001159561882';
     
     public function bot(string $method, array $datas = [])
     {
